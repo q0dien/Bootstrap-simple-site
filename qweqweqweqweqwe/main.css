@@ -1,0 +1,110 @@
+html{
+    font-size: 26px;
+}
+
+.fullscreen-img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    max-height: 600px; /* Ограничиваем высоту до 500px */
+    object-fit: cover; /* Сохраняем пропорции */
+  }
+
+  .welcome-heading {
+    text-align: left; /* Смещаем текст вправо */
+    padding-bottom: 10px; /* Отступ между текстом и линией */
+    margin-left: 300px; /* Отступ справа для более аккуратного вида */
+  }
+
+  hr {
+    height: 5px; /* "Жирность" линии */
+    background-color: rgb(10, 1, 1); 
+    border: none; /* Убираем стандартную границу */
+    margin: 20px 0; /* Отступы сверху и снизу */
+  }
+
+  .table img {
+    width: 400px; /* Ширина изображения */
+    height: auto; /* Высота будет пропорциональна ширине */
+    border: 2px solid #000000; /* Рамка вокруг картинки */
+    display: block; /* Чтобы убрать пробелы между изображениями */
+    margin: 0 auto; /* Для выравнивания по центру */
+    
+  }
+  
+.footer{
+  background-color: black;
+  font-size:15px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none; /* Это уберет подчеркивание, если оно не нужно */
+}
+
+.footer a:hover {
+  color: lightgray; /* Можно изменить цвет при наведении */
+}
+
+.kys{
+  padding: 0%;
+}  
+
+.kys .carousel-item{
+  max-height: 500px;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: center;  /* Выравнивание по центру по горизонтали */
+  align-items: center;      /* Выравнивание по центру по вертикали */
+  gap: 20px;                /* Расстояние между карточками */
+  padding: 20px;            /* Внутренний отступ */
+
+}
+
+.card {
+  width: 18rem;             /* Ширина карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Тень для карточки */
+  border-radius: 8px;       /* Скругление углов */
+  overflow: hidden;         /* Обрезка содержимого, если оно выходит за границы */
+  text-align: center;       /* Выравнивание текста внутри карточки */
+  font-size: 12px;
+}
+
+.img-container {
+  width: 100%;              /* Ширина изображения 100% от карточки */
+  height: 450px;            /* Фиксированная высота изображения */
+  overflow: hidden;         /* Обрезка изображения, если оно выходит за границы */
+}
+
+.card img {
+  width: 100%;              /* Ширина изображения */
+  height: 100%;             /* Высота изображения */
+  object-fit: cover;        /* Масштабирование изображения без искажения */
+}
+
+.card-body {
+  padding: 10px;            /* Внутренний отступ внутри карточки */
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  
+}
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.777rem;
+}
+.footer .contact-info li {
+display: inline; 
+}
+.footer .social-icon {
+width: 30px; 
+height: 30px; 
+object-fit: contain; 
+}

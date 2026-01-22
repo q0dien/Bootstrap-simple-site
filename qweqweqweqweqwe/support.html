@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+    <title>Поддержка и устранение неполадок</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+           font-family: "Roboto", sans-serif; 
+        }
+        .navbar-nav .nav-link {
+            color: #000000;
+            text-align: center;
+            padding: 10px;
+        }
+        .navbar {
+            background-color: #519cca; 
+            text-align: center; 
+
+        }
+        .navbar a {
+            text-align: center; 
+        
+        }
+        h2, h3, h5, h4 {
+            text-align: center; 
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .card img {
+            width: 100%;
+        }
+        .slider {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 20px;
+            
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.777rem;
+        }
+        .footer .contact-info li {
+    display: inline; 
+}
+        .footer .social-icon {
+    width: 30px; 
+    height: 30px; 
+    object-fit: contain; 
+}
+        
+
+.support-header {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    
+}
+
+.support-items {
+    display: flex;
+    gap: 100px; 
+}
+
+.support-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.support-item img {
+    display: block;
+}
+.support-container {
+    margin: 30px; 
+}
+
+
+
+    </style>
+  </head>
+  <body>
+   
+    <!-- Шапка -->
+    <nav class="navbar navbar-expand-lg" style="background-color: white;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="main.html">
+                <img src="logo.jpeg" alt="Главная" style="height: 40px; width: 40px;">
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Каталог
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Принтотека</a></li>
+                <li><a class="dropdown-item" href="laptopss.html">Ноутбуки</a></li>
+                <li><a class="dropdown-item" href="printerss.html">Принтеры</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Поддержка
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="support.html">Поддержка и устранение неполадок</a></li>
+                <li><a class="dropdown-item" href="#">Печать</a></li>
+                <li><a class="dropdown-item" href="#">Контактная информация</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+          </form>
+          
+          
+          <img src="korzink.jpg" alt="Корзина" style="height: 30px; width: 30px; margin-left: 10px;">
+          
+          <button type="button" class="btn btn-dark" style="margin-left: 10px;" onclick="window.location.href='login.html';">Вход</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Меню навигации -->
+    <nav class="navbar navbar-expand-lg mx-auto">
+      <div class="container-fluid">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Главная</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Продукты
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Каталог 1</a></li>
+              <li><a class="dropdown-item" href="#">Каталог 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Драйверы</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Диагностика
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Диагностика 1</a></li>
+              <li><a class="dropdown-item" href="#">Диагностика 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Связь</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Бизнес поддержка</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Мой аккаунт HP
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Настройки аккаунта</a></li>
+              <li><a class="dropdown-item" href="#">Выход</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="container mt-5">
+      <h2>Добро пожаловать в службу поддержки HP!</h2>
+      <h5>Чем мы можем помочь?</h5>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="PO.avif" alt="Card Image 1">
+            <div class="card-body">
+              <p class="card-text">ПО и драйверы             <span>&rarr;</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="PP.avif" alt="Card Image 2">
+            <div class="card-body">
+              <p class="card-text">Поддержка принтеров  <span>&rarr;</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="PK.avif" alt="Card Image 3">
+            <div class="card-body">
+              <p class="card-text">Поддержка компьютеров <span>&rarr;</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container support-container">
+        <div class="support-header">
+            <h4 class="mt-5">Поддержка других устройств:</h4>
+            <div class="support-items">
+                <div class="support-item">
+                    <img src="win.jpg" alt="Лого 1" height="30" width="30">
+                    <p><a href="#">Windows 11 Support</a></p>
+                </div>
+                <div class="support-item">
+                    <img src="poly.jpg" alt="Лого 2" height="30" width="30">
+                    <p><a href="#">Поддержка Poly</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+      <div class="row mt-5">
+        <div class="col-md-8 d-flex justify-content-between">
+            <a href="ссылка1.html" class="d-block">
+                <img src="z1.jpg" alt="Большое изображение 1" height="280" width="280" class="img-fluid">
+            </a>
+            <a href="ссылка2.html" class="d-block">
+                <img src="z2.jpg" alt="Большое изображение 2" height="280" width="280" class="img-fluid">
+            </a>
+            <a href="ссылка3.html" class="d-block">
+                <img src="z3.jpg" alt="Большое изображение 3" height="280" width="280" class="img-fluid">
+            </a>
+        </div>
+    
+        <div class="col-md-4">
+            <h6>Больше ресурсов поддержки</h6>
+          <ul>
+            <li><a href="#">Информационная поддержка Windows 11</a></li>
+            <li><a href="#">Зарегистрируйте ваш продукт</a></li>
+            <li><a href="#">Посетите наш ремонтный центр</a></li>
+            <li><a href="#">Устройства Poly для совместной работы</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <h2 class="mt-5">Определите ваш продукт для руководств и конкретной информации о продукте</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h6>Введите серийный номер, номер продукта или название продукта</h6>
+          <form>
+            <input class="form-control" type="text" placeholder="Введите запрос для поиска">
+            <button class="btn btn-primary mt-3" type="submit">Или разрешите HP определить ваш продукт</button>
+          </form>
+          <a href="#" class="d-block mt-2">Войдите, чтобы найти сохраненный вами продукт</a>
+        </div>
+        <div class="col-md-6">
+          <h6>Выберите тип продукта для советов по поиску вашего серийного номера</h6>
+          <ul class="list-unstyled">
+            <li>
+              <img src="s1.jpg" alt="Маленькое изображение 1" class="me-2"height="30" width="30"  >
+              <a href="#">Принтер</a>
+            </li>
+            <li>
+              <img src="s2.jpg" alt="Маленькое изображение 2" class="me-2"height="30" width="30">
+              <a href="#">Ноутбук</a>
+            </li>
+            <img src="s3.jpg" alt="Маленькое изображение 2" class="me-2"height="30" width="30">
+              <a href="#">Настольный ПК</a>
+            </li>
+            <li>
+              <img src="s4.jpg" alt="Маленькое изображение 3" class="me-2"height="30" width="30">
+              <a href="#">Гарнитура</a>
+            <li>
+              <img src="s5.jpg" alt="Маленькое изображение 3" class="me-2"height="30" width="30">
+              <a href="#">Другое</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    
+      <h3 class="mt-5">Введите тему для поиска в библиотеке знаний</h3>
+      <form class="mb-3">
+        <input class="form-control" type="text" placeholder="Чем мы можем вам помочь?">
+      </form>
+      <div class="slider">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="a1.jpg" class="d-block w-100" alt="Слайд 1">
+            </div>
+            <div class="carousel-item">
+              <img src="a2.jpg" class="d-block w-100" alt="Слайд 2">
+            </div>
+            <div class="carousel-item">
+              <img src="a3.jpg" class="d-block w-100" alt="Слайд 3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!-- Футер -->
+   <footer class="footer mt-5">
+    <h6>Страна/регион: Казахстан</h6>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+              
+                <h6>О компании</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Связь с НР</a></li>
+                    <li><a href="#" class="text-white">Вакансии</a></li>
+                    <li><a href="#" class="text-white">Для инвесторов</a></li>
+                    <li><a href="#" class="text-white">Социальная значимость</a></li>
+                    <li><a href="#" class="text-white">Пресс-центр</a></li>
+                    <li><a href="#" class="text-white">Гараж</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Как купить</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Позвонить представителю НР</a></li>
+                    <li><a href="#" class="text-white">Поиск официального дилера</a></li>
+                    <li><a href="#" class="text-white">Промо акции от НР</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Поддержка</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Загрузка драйверов</a></li>
+                    <li><a href="#" class="text-white">Поддержка и устранение неполадок</a></li>
+                    <li><a href="#" class="text-white">Сообщество</a></li>
+                    <li><a href="#" class="text-white">Регистрация продукта</a></li>
+                    <li><a href="#" class="text-white">Контроль выполнения ремонта</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Партнеры НР</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Партнерская программа HP Amplify</a></li>
+                    <li><a href="#" class="text-white">HP Partner Portal</a></li>
+                    <li><a href="#" class="text-white">Developers</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h6>Будьте на связи:</h6>
+                <ul class="list-unstyled contact-info">
+                  <li><a href="https://www.linkeldin.com" target="_blank">
+                      <img src="in.jpg" alt="linkeldin" class="social-icon" height="25" width="25">
+                  </a></li>
+                  <li><a href="https://www.Instagram.com" target="_blank">
+                      <img src="inst.jpg" alt="Instagram" class="social-icon"height="25" width="25" >
+                  </a></li>
+                  <li><a href="https://www.twitter.com" target="_blank">
+                      <img src="x.jpg" alt="Twitter" class="social-icon"height="25" width="25">
+                  </a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
+  
